@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background: #292828;
+  /* font-family: "Marcellus", serif; */
+  font-family: "Architects Daughter", cursive;
+  color: aliceblue;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ============ Header START ============= */
+
+.header-top {
+  background-color: black;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.middle-item a {
+  font-size: 20px;
+  color: whitesmoke;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.middle-item a:hover {
+  color: aquamarine;
+  font-size: 21px;
+}
+
+.middle-active-item a {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: gold;
+  text-decoration: underline;
+}
+
+.middle-active-item a:hover {
+  font-size: 21px;
+  color: aquamarine;
+}
+
+.arrow-down {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: brown;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+.arrow-down:hover {
+  opacity: 1;
+}
+
+.arrow-down a {
+  color: aliceblue;
+}
+
+.header-top-right {
+  margin-right: 30px;
+}
+
+/* ============ Header END ============= */
+
+/* ============ Hero-section START ============= */
+
+.hero-left {
+  background: url(../img/hero-left-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 122px 30px 200px 0;
+  color: aliceblue;
+}
+
+.hero-left-title {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 70px;
+}
+
+.date-item {
+  font-size: 20px;
+}
+.date-item span {
+  margin-right: 10px;
+}
+
+.hero-left-text {
+  max-width: 507px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.left-btn {
+  padding: 10px 30px;
+  background-image: linear-gradient(
+    to right bottom,
+    #275cab,
+    #0078b8,
+    #008faf,
+    #00a198,
+    #52b07f
+  );
+  border-radius: 20px;
+  margin-right: 10px;
+  color: aliceblue;
+}
+
+.left-btn span {
+  margin-left: 10px;
+}
+
+.right-btn {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  color: #292828;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.right-btn:hover {
+  background-color: green;
+  color: gold;
+}
+
+/* ============ Hero-section END ============= */
+
+/* ============ Trending START ============= */
+
+.trending-section {
+  background-color: rgb(69, 64, 64);
+  padding: 30px 0;
+}
+.trending-title {
+  align-items: center;
+}
+
+.trending-title-text {
+  font-size: 28px;
+}
+
+.trending-title-text span {
+  margin-right: 10px;
+}
+
+.trending-card img {
+  border-radius: 20px;
+  border: 2px solid violet;
+}
+
+.btn-trend {
+  padding: 10px 30px;
+  background-image: linear-gradient(
+    to right bottom,
+    #275cab,
+    #0078b8,
+    #008faf,
+    #00a198,
+    #52b07f
+  );
+  border-radius: 20px;
+  margin-right: 10px;
+  color: aliceblue;
+}
+
+/* ============ Trending END ============= */
+
+/* ============ Genres START ============= */
+
+.genres-section {
+  background-color: rgb(6, 44, 6);
+  padding: 30px 0;
+  color: aliceblue;
+}
+
+.genres-card1 {
+  background: url(../img/gen-bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card2 {
+  background: url(../img/gen-bg-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card3 {
+  background: url(../img/gen-bg-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card4 {
+  background: url(../img/gen-bg-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card5 {
+  background: url(../img/gen-bg-5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card6 {
+  background: url(../img/gen-bg-6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card7 {
+  background: url(../img/gen-bg-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card8 {
+  background: url(../img/gen-bg-8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 45px 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.genres-card-title {
+  font-size: 28px;
+}
+
+/* ============ Genres END ============= */
+
+/* ============ Actors START ============= */
+
+.actors-section {
+  background-color: rgb(59, 18, 18);
+  padding: 30px 0;
+  color: aliceblue;
+}
+
+.actor-card-img img {
+  width: 260px;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid gold;
+}
+
+.actor-card-text {
+  font-size: 18px;
+}
+
+/* ============ Actors END ============= */
+
+/* ============ Bunny START ============= */
+
+.bunny-section {
+  background-color: rgb(37, 23, 49);
+  padding: 30px 0;
+  color: aliceblue;
+}
+
+.bunny-row {
+  align-items: center;
+}
+
+.right-side-text {
+  font-size: 64px;
+}
+
+/* ============ Register START ============= */
+
+.register-section {
+  max-width: 1220px;
+
+  margin: 0 auto;
+  background: url(../img/reg-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+.reg-btn {
+  padding: 10px 20px;
+  background-image: linear-gradient(
+    to top,
+    #275cab,
+    #0078b8,
+    #008faf,
+    #00a198,
+    #52b07f
+  );
+  color: aliceblue;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.reg-content {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reg-text {
+  font-size: 64px;
+  text-shadow: 3px 3px 4px green;
+}
+/* ============ Footer END ============= */
+
+.footer-section {
+  background-color: rgb(15, 77, 15);
+  padding: 30px 0;
+  color: gold;
+  align-items: center;
+}
+
+.items-col {
+  margin-right: 150px;
+}
+/* ============ Footer START ============= */
+
+/* ============ Register END ============= */
+/* ============ Register START ============= */
+/* ============ Register END ============= */
+/* ============ Register START ============= */
+/* ============ Register END ============= */
+
+@media (max-width: 768px) {
+  .trend-button {
+    text-align: center;
+  }
+
+  .middle-item a {
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+  }
+
+  .reg-text {
+    font-size: 20px;
+  }
+
+  .reg-btn {
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+  .bunny-section {
+    padding: 10px 0;
+  }
+  
+  .items-col {
+    margin-bottom: 20px;
+  }
+
+  .foot-logo {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .footer-section {
+    display: block;
+    text-align: center;
+  }
+}
